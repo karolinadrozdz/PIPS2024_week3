@@ -27,3 +27,18 @@ cheat <- function(exercise) {
     return("No solution available for this exercise.")
   }
 }
+
+#Function for making random art
+
+make_art <- function(seed = NULL) {
+  if (!is.null(seed)) {
+    set.seed(seed)
+  } 
+  num_shapes <- sample(5:10, 1)     # Create random art parameters
+  colors <- sample(colors(), num_shapes)
+  
+  plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE) # Plotting the art
+  for (i in 1:num_shapes) {
+    rect(runif(1), runif(1), runif(1), runif(1), col=colors[i], border=NA)
+  }
+}
