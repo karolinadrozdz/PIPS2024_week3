@@ -1,0 +1,15 @@
+---
+title: "Random Art Generator"
+author: "Karolina Drożdż"
+output: html_document
+---
+
+## Overview
+
+This document demonstrates the `make_art` function in R. This function generates random art pieces in random colours and shapes. 
+
+## Setup
+
+```{r setup}
+library(ggplot2) # If using ggplot2 in make_art function
+source("path/to/make_art_function.R") # Source the function
