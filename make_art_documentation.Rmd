@@ -1,15 +1,22 @@
 ---
 title: "Random Art Generator"
 author: "Karolina Drożdż"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ## Overview
 
-This document demonstrates the `make_art` function in R. This function generates random art pieces in random colours and shapes. 
+This document demonstrates the `make_art` function in R. This function generates random art pieces in random colors and shapes. 
 
 ## Setup
 
 ```{r setup}
 library(ggplot2) # If using ggplot2 in make_art function
-source("path/to/make_art_function.R") # Source the function
+source("https://raw.githubusercontent.com/karolinadrozdz/PIPS2024_week3/main/my_functions.R") # Source the function
+
+#Demo
+make_art(seed = 32)
+
+```
